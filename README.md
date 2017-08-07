@@ -1,2 +1,2 @@
 # milaTmall
-https://search.msn.com/    "琥珀蜜蜡商城"
+https://www.orzone.cn/    "琥珀蜜蜡商城"
