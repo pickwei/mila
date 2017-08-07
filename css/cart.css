@@ -1,0 +1,151 @@
+/*购物车*/
+.cart {
+    margin-top:20px;
+}
+.cart_header {
+    text-align: right;
+    font-size: 14px;
+    line-height: 36px;
+}
+.cart_header>button{
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 36px;
+    background: #f63;
+    border:none;
+    border-radius: 3px;
+    color:#fff;
+    font-size: 18px;
+}
+.cart_header>span {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.cart_header>span>em {
+    font-style: normal;
+    color:#f63;
+}
+.cart_header>span>strong{
+    font-size: 18px;
+    color:#f63;
+}
+.cart_con {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.cartcon_title {
+    line-height: 33px;
+    background: #eee;
+    border:1px solid #ddd;
+}
+.cartcon_title>span {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+.cartcon_title>span:nth-child(1){
+    width: 80px;
+}
+.cartcon_title>span:nth-child(2){
+    width: 370px;
+}
+.cartcon_title>span:nth-child(3){
+    width: 120px;
+}
+.cartcon_title>span:nth-child(4){
+    width: 140px;
+}
+.cartcon_title>span:nth-child(5){
+    width: 100px;
+    margin-right:10px;
+}
+.cartcon_list a{
+    color:#FF6633;
+}
+.cart_con h2 {
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.cart_con ul li {
+    padding:20px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+.cart_con .cartcon_list>ul>li>a,
+.cart_con .cartcon_list>ul>li>i,
+.cart_con .cartcon_list>ul>li>div,
+.cart_con .cartcon_list ul>li>strong,
+.cart_con .cartcon_list ul>li>em,
+.cart_con ul li input {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+}
+
+.cart_con .cartcon_list>ul>li>a.cart_img {
+    margin-left: 20px;
+    border:1px solid #eee;
+    padding: 4px;
+    width: 90px;
+    height: 90px;
+}
+.cart_con .cartcon_list>ul>li>a.cart_img:hover {
+    border:1px solid #ccc;
+}
+.cart_con .cartcon_list>ul>li>a.cart_img img {
+    max-width:100%;
+}
+.cart_con .cartcon_list>ul>li>a.cart_title {
+    width: 310px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.cart_con ul li>i {
+    width: 120px;
+}
+.cart_con ul li>strong {
+    width: 140px;
+    color:#f63;
+}
+.cart_con ul li>em {
+    border:1px solid transparent;
+    border-radius: 3px;
+    padding: 2px;
+    width: 12px;
+    height: 12px;
+    background: url(../img/spr_res_.png) -153px -30px no-repeat;
+    cursor: pointer;
+}
+.cart_con ul li>em:hover {
+    border:1px solid #ddd;
+}
+.cart_con>ul>li>div {
+    width: 140px;
+}
+.cart_con .cartcon_list>ul>li>div span {
+    width: 20px;
+    height:22px;
+    background: #e8e8e8;
+    text-align: center;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.cart_con .cartcon_list>ul>li>div span:hover {
+    cursor: pointer;
+    background: #eee;
+}
+.cart_con .cartcon_list>ul>li>div input {
+    width: 28px;
+    height:18px;
+    border:1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+}
+.cartcon_list strong{
+    text-align:center;
+}

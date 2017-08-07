@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户注册页面</title>
+    <link rel="icon" href="img/icon.jpg"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/register.css"/>
+</head>
+<body>
+<div class="logo">
+    <a href=""><img src="img/logo.png" alt=""/></a>
+</div>
+<div class="reg-bor">
+    <img src="img/reg-bor.png" alt=""/>
+</div>
+<div id="main">
+    <div class="container">
+        <div class="login_bg">
+            <a href=""><img src="img/reg-banner1.jpg" alt=""/></a>
+            <a href=""><img src="img/reg-banner2.jpg" alt=""/></a>
+        </div>
+        <div class="login_box">
+            <!--HTML5标准推荐的表单写法-->
+            <b>账号注册</b>
+            <span>已有账号？<a href="login.html">立即登录</a></span>
+            <form>
+                <div class="form-group">
+                    <label class="control-label " for="uname"></label>
+                    <input class="form-control" name="uname" id="uname" placeholder="请输入用户名"    maxlength="12" type="text"/>
+                    <p id="uname_msg"><span>*</span>用户名只能由6~12汉字、字母、数字组成</p>
+                    <div class="uname_icon"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="upwd"></label>
+                    <input class="form-control" name="upwd" id="upwd" placeholder="请输入密码"   type="password"/>
+                    <p id="Password_msg"><span>*</span>密码由6-18字母和数字组成，不能是纯数字或纯英文</p>
+                    <div class="Password_icon"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="Confirm_upwd"></label>
+                    <input class="form-control" name="Confirm_upwd" id="Confirm_upwd" placeholder="请输入确认密码"   type="password"/>
+                    <p id="Confirm_upwd_msg"></p>
+                    <div class="Confirm_upwd_icon"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="tel"></label>
+                    <input class="form-control" name="tel" id="tel" placeholder="请输入11位手机号码" maxlength="11"   type="text"/>
+                    <p id="tel_msg"></p>
+                    <div class="tel_icon"></div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="tel"></label>
+                    <input class="form-control" name="tel" id="code" placeholder="请输入6位短信验证码" maxlength="6"  type="text"/>
+                    <button class="get_code">获取验证码</button>
+                    <p id="code_msg"></p>
+                </div>
+
+                <div class="form-group-checkbox">
+                    <input class="form-control" name="checkbox" id="checkbox" checked required type="checkbox"/>
+                    <label class="control-label" for="checkbox">我已阅读并同意<a href="#">《琥珀蜜蜡用户注册服务条款》</a></label>
+                    <p id="isAgree"></p>
+                </div>
+                <a id="bt-login" href="#">立即注册</a>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="footer_tem">
+    <p>
+        <a href="#">公司动态</a>|
+        <a href="#">在线留言</a>|
+        <a href="#">在线反馈</a>|
+        <a href="#">下载中心</a>|
+        <a href="#">友情链接</a>|
+        <a href="#">会员中心</a>|
+        <a href="#">站内搜索</a>|
+        <a href="#">网站地图</a>
+    </p>
+    <p> Copyright © 2015-2016 <a href="">琥珀蜜蜡网</a> 版权所有 </p>
+    <p class="authentication">
+        <a href=""><img src="img/footer_tem_1.png" alt=""/></a>
+        <a href=""><img src="img/footer_tem_2.png" alt=""/></a>
+        <a href=""><img src="img/footer_tem_3.png" alt=""/></a>
+    </p>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>用户登录页面</title>
+    <link rel="icon" href="img/icon.jpg"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+</head>
+<body>
+<div class="logo">
+    <a href=""><img src="img/logo.png" alt=""/></a>
+</div>
+<div class="reg-bor">
+    <img src="img/reg-bor.png" alt=""/>
+</div>
+<div id="main">
+    <div class="container">
+        <div class="login_bg">
+            <a href=""><img src="img/reg-banner1.jpg" alt=""/></a>
+            <a href=""><img src="img/reg-banner2.jpg" alt=""/></a>
+        </div>
+        <div class="login_box">
+            <!--HTML5标准推荐的表单写法-->
+            <b>账号登录</b>
+            <form>
+                <div class="form-group">
+                    <label class="control-label " for="uname"></label>
+                    <input value="weipengjun" class="form-control" name="uname" id="uname" autofocus required  minlength="6" maxlength="16" type="text"/>
+                    <p class="help-block "></p>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="upwd"></label>
+                    <input value="123456" class="form-control" name="upwd" id="upwd" autofocus required type="password"/>
+                    <p class="help-block "></p>
+                </div>
+
+                <a id="bt-login" href="#">登录</a>
+            </form>
+            <p>还没有账号？<a href="register.html">立即注册</a></p>
+            <div class="unite_title">
+                <hr/>
+                <span>联合网站登录</span>
+                <hr/>
+            </div>
+            <div class="third_login">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer_tem">
+    <p>
+        <a href="#">公司动态</a>|
+        <a href="#">在线留言</a>|
+        <a href="#">在线反馈</a>|
+        <a href="#">下载中心</a>|
+        <a href="#">友情链接</a>|
+        <a href="#">会员中心</a>|
+        <a href="#">站内搜索</a>|
+        <a href="#">网站地图</a>
+    </p>
+    <p> Copyright © 2015-2016 <a href="">琥珀蜜蜡网</a> 版权所有 </p>
+    <p class="authentication">
+        <a href=""><img src="img/footer_tem_1.png" alt=""/></a>
+        <a href=""><img src="img/footer_tem_2.png" alt=""/></a>
+        <a href=""><img src="img/footer_tem_3.png" alt=""/></a>
+    </p>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
