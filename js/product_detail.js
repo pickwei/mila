@@ -52,8 +52,9 @@ $(function(){
         })
     });
     //加入购物车
-    $(".detail").on('click',function(e){
+    $(".detail").on('click','#addCart',function(e){
         e.preventDefault();
+        console.log(e.target.tagName);
         var n=4;
         if(!sessionStorage['LoginName']){//如果未登录
             alert("请先登录");

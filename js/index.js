@@ -1,4 +1,3 @@
-
 /**：页面加载完后，异步请求页头和页尾**/
 $(function(){
     $('div#header').load('header.php', function(){
@@ -91,3 +90,20 @@ $.ajax({
         $('.recommend_show').html(html);
     }
 });
+
+// 滑动滚动条
+$(window).scroll(function(){
+    // 滚动条距离顶部的距离 大于 500px时
+    if($(window).scrollTop() >= 500){
+          $(".toTop").fadeIn(1000); // 开始淡入
+    } else{
+          $(".toTop").stop(true,true).fadeOut(1000); // 如果小于等于 500 淡出
+    }
+});
+
+
+//点击回到顶部
+$(".toTop").click(function() {
+    console.log('回到顶部被点击了');
+    $("html,body").animate({scrollTop:0}, 500);
+}); 

@@ -4,11 +4,11 @@ header('Content-Type: text/html;charset=UTF-8');
 <div class="container">
      <div class="footer_service">
          <ul>
-             <li><a href="#">一小时快修服务</a></li>
-             <li><a href="#">七天无理由退货</a></li>
-             <li><a href="#">15天免费换货</a></li>
-             <li><a href="#">满150元包邮</a></li>
-             <li><a href="#">商家售后网点</a></li>
+             <li> <i class='iconfont icon-baoyangweixiu'></i><a href="#">一小时快修服务</a></li>
+             <li> <i class='iconfont icon-yunshuzhongwuliu-xianxing'></i><a href="#">七天无理由退货</a></li>
+             <li> <i class='iconfont icon-gouwuche'></i><a href="#">15天免费换货</a></li>
+             <li> <i class='iconfont icon-liwu'></i><a href="#">满150元包邮</a></li>
+             <li> <i class='iconfont icon-liwu'></i><a href="#">商家售后网点</a></li>
          </ul>
      </div>
      <div class="footer_links">

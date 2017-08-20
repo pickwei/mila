@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="360-site-verification" content="da3539639fce9d159fd050d2bcb1b55f" />
     <title>琥珀蜜蜡商城</title>
-    <link rel="stylesheet" href="css/index.css"/>
-    <link rel="stylesheet" href="css/slider.css"/>
-    <!-- <link rel="stylesheet" href="http://www.jq22.com/jquery/swiper.min.css"> -->
-    <link rel="icon" href="img/icon.jpg"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/slider.css"/>
+    <link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css">
+    <link rel="icon" href="./img/icon.jpg"/>
 </head>
 <body>
 <div id="header"></div>
@@ -520,7 +521,7 @@
         <div class="container">
             <p>特色产品
                 <i>Characteristic products</i>
-                <a href="#">查看全部<span></span></a>
+                <a href="#">查看全部<span class='iconfont icon-xiangyou'></span></a>
             </p>
             <ul class="show_box_items">
                 <li>
@@ -713,7 +714,7 @@
         <div class="container">
             <p>为您推荐
                 <i>Characteristic products</i>
-                <a href="#">查看全部<span></span></a>
+                <a href="#">查看全部<span class='iconfont icon-xiangyou'></span></a>
             </p>
             <ul class="recommend_show">
             </ul>
@@ -722,42 +723,10 @@
 </div>
 <!--网站底部-->
 <div id="footer"></div>
-
-<script src="js/jquery-1.11.3.js"></script>
-<script src="js/idangerous.swiper.min.js"></script>
+<div class="toTop"></div>
+<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/common.js"></script>
 <script src="js/index.js"></script>
-<script>
-var viewSwiper = new Swiper('hot_sale_slider', {
-	onSlideChangeStart: function() {
-		updateNavPosition()
-	}
-})
-
-var previewSwiper = new Swiper('hot_sale_thumbnail', {
-	visibilityFullFit: true,
-	slidesPerView: 'auto',
-	onlyExternal: true,
-	onSlideClick: function() {
-		viewSwiper.swipeTo(previewSwiper.clickedSlideIndex)
-	}
-})
-
-function updateNavPosition() {
-		$('.hot_sale_thumbnail .active').removeClass('active')
-		var activeNav = $('.hot_sale_thumbnail img').eq(viewSwiper.activeIndex).addClass('active')
-		if (!activeNav.hasClass('swiper-slide-visible')) {
-			if (activeNav.index() > previewSwiper.activeIndex) {
-				var thumbsPerNav = Math.floor(previewSwiper.height / activeNav.height()) - 1
-				previewSwiper.swipeTo(activeNav.index() - thumbsPerNav)
-			} else {
-				previewSwiper.swipeTo(activeNav.index())
-			}
-		}
-	}
-</script>
-    
-
 </body>
 </html>

@@ -1,6 +1,7 @@
 /*购物车*/
 .cart {
-    margin-top:20px;
+    margin:20px auto;
+    width: 930px;
 }
 .cart_header {
     text-align: right;

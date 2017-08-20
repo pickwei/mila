@@ -5,33 +5,7 @@ body{
     margin:0;
     padding:0;
 }
-/*ICON*/
-@font-face
-{
-    font-family: FontAwesome;
-    src: url('../fonts/fontawesome-webfont.ttf'),
-    url('../fonts/fontawesome-webfont.eot'); /* IE9 */
-}
-.icon-search {
-    font-family: 'FontAwesome';
-    position: absolute;
-    line-height: 2.5rem;
-    padding-left: 10px;
-}
-.icon-search:before {
-    content: '\f002';
-}
-.icon-home {
-    font-family: 'FontAwesome';
-    position: absolute;
-    color: #fff;
-    font-size: 1.5em;
-    line-height: 50px;
-    padding-left: 20px;
-}
-.icon-home:before {
-    content: '\f015';
-}
+
 
 /*清除图片下的3像素*/
 img{
@@ -66,6 +40,7 @@ p,h1,h2,h3,h4,h5,h6,ul,dl,dd{
     color: #fff;
 }
 #top .container{
+    background:#333;
     overflow: hidden;
     height: 40px;
     line-height: 40px;
@@ -197,12 +172,14 @@ p,h1,h2,h3,h4,h5,h6,ul,dl,dd{
     position:relative;
 }
 #nav>.container>.search input{
-    border: 2px solid #ddd;
+    border: 2px solid #ff6700;
     width: 205px;
     height: 27px;
     padding: 5px 4px;
+    outline: none;
 }
-#nav>.container>.search button{
+
+#nav>.container>.search input[type=button]{
     width:60px;
     height:40px;
     border:none ;
@@ -210,7 +187,9 @@ p,h1,h2,h3,h4,h5,h6,ul,dl,dd{
     font-size:16px;
     font-weight: bold;
     color: #fff;
-
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 
@@ -219,6 +198,8 @@ p,h1,h2,h3,h4,h5,h6,ul,dl,dd{
 #main>.banner{
     background:#FAFAFA;
     position: relative;
+    width: 100%;
+    min-width: 1100px; /*防止小屏幕出现 宽度变小*/
 }
 /******大 轮播图样式****/
 #main>.banner>.container>.category{
@@ -486,9 +467,9 @@ p,h1,h2,h3,h4,h5,h6,ul,dl,dd{
     width:158px;
     margin-top: 10px;
 }
-#main .hot_product .hot_sale>.hot_sale_banner .hot_sale_thumbnail li{
+/* #main .hot_product .hot_sale>.hot_sale_banner .hot_sale_thumbnail li{
 
-}
+} */
 #main .hot_product .hot_sale>.hot_sale_banner .hot_sale_thumbnail img{
     width: 143px;
     height:82px;
@@ -553,8 +534,13 @@ p,h1,h2,h3,h4,h5,h6,ul,dl,dd{
     float:right;
     height:30px;
     line-height: 30px;
-    font-size:15px;
+    font-size:16px;
     font-weight: normal;
+}
+#main .recommend>.container>p>a>span{
+    display: inline-block;
+    width: 36px;
+    padding: 0 3px;
 }
 #main .recommend .recommend_show{
     /*margin-top: 20px;*/
@@ -604,7 +590,7 @@ p,h1,h2,h3,h4,h5,h6,ul,dl,dd{
 
 /*************网站底部**************/
 #footer .container{
-    margin-top:100px;
+    margin-top:40px;
 }
 #footer .footer_service ul{
     margin:25px 0 auto;
@@ -622,6 +608,14 @@ p,h1,h2,h3,h4,h5,h6,ul,dl,dd{
     box-sizing: border-box;
     border-right: 1px solid #E0E0E0;
 }
+#footer .footer_service li>i{
+   display: inline-block;
+   font-size: 28px;
+   color: #FF781E;
+   padding-right:10px;
+   line-height:40px;
+}
+
 #footer .footer_service li:last-child {
     border-right:none;
 }
@@ -705,3 +699,29 @@ p,h1,h2,h3,h4,h5,h6,ul,dl,dd{
 #footer_tem p.authentication{
     margin:20px 0;
 }
+
+.toTop{
+    background:url(../img/toTop.jpg) no-repeat 0 0;
+    cursor:pointer;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-size: 42px auto;
+    display: none;   /*
+                        解决刷新页面 返回顶部按钮存在的情况
+                    */
+}
+
+
+@font-face {
+    font-family: 'iconfont';  /* project id 389764 */
+    src: url('//at.alicdn.com/t/font_389764_jbi3jcsnq5pcik9.eot');
+    src: url('//at.alicdn.com/t/font_389764_jbi3jcsnq5pcik9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_389764_jbi3jcsnq5pcik9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_389764_jbi3jcsnq5pcik9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_389764_jbi3jcsnq5pcik9.svg#iconfont') format('svg');
+  }

@@ -30,6 +30,7 @@ a{
     width: 630px;
     text-align: center;
     padding-top: 70px;
+    pointer-events: none;
 }
 .logo img{
     vertical-align: text-bottom;

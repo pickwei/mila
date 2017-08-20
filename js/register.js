@@ -13,6 +13,7 @@ $('.get_code').click(function(){
     if($("#tel").val()==""){
         $("#tel_msg").html("手机号不能为空!");
         CanSubmit=false;
+        return false  //阻止button在表单中的默认提交行为
     }else{
         var timer=null;
         var count=60;

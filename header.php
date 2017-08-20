@@ -3,7 +3,7 @@ header('Content-Type: text/html;charset=UTF-8');
 ?>
 <div id="top">
     <div class="container">
-        <a href="#" >收藏本站</a>
+        <a href="javascript:void(0);" onclick="AddFavorite('琥珀蜜蜡商城','www.orzone.cn/hupomila')">收藏本站</a>
         <div class="top_tips rt">
             <ul>
                 <li id='welcome'>您好，欢迎来到琥珀蜜蜡商城！<a href="login.html" >[登录]</a><a href="register.html" >[免费注册]</a></li>
@@ -74,7 +74,7 @@ header('Content-Type: text/html;charset=UTF-8');
                   <input type="hidden" name="lang" value="cn">
                   <input type="hidden" name="searchtype" value="0">
                   <input type="text" name="searchword" size="30" placeholder="请输入搜索关键词！">
-                  <button type="submit" name="submit" value="">搜索</button>
+                  <input type="button" name="submit" value="搜索"></input>
               </form>
           </div>
     </div>
